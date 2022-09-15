@@ -1,0 +1,177 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    .container {
+        background-image: url("/assets/networkicon.svg");
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .title {
+        font-family: dosis;
+    }
+
+    .header {
+        font-family: dosis;
+    }
+
+    a {
+        font-family: dosis;
+        margin-top: 40px;
+        margin-left: 75px;
+    }
+
+    h5 {
+        font-size: small;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="relative mt-[0px] w-full h-full">
+
+        <div class="container absolute">
+            <div class="border-b-4 border-white w-[100%] h-[10%]">
+                <span class="header bg-white w-[10vw] h-[6vh] absolute  ml-[5vw] mt-[1.7vh] flex">
+                    <img src="/assets/networklogo.png" class="w-[2vw] ml-1">
+                    <span class="font-bold text-2xl text-center text-black ml-3 mt-1.5">NETWORK</span>
+                    <div class="ml-[3vw]"><button routerLink="/person-details"
+                            class="header bg-white hover:bg-gray-300 text-black font-semibold py-1 px-2 rounded mt-2 border border-black">
+                            +Add
+                        </button></div>
+                    <!-- <div class=""><button
+                            class="ml-[67vw] p-0 header gap-4 flex bg-white hover:bg-gray-300 text-black font-semibold py-1 px-8 rounded mt-2 border border-black">
+                            Profile <img class="" src="/assets/images/pdrop-down 2.png">
+                        </button>
+
+                    </div> -->
+                    <button
+                        class="ml-[67vw] p-0 header gap-4 flex bg-white hover:bg-gray-300 text-black font-semibold py-1 px-8 rounded mt-2 border border-black"
+                        (click)="showElements =!showElements">Profile <img class=""
+                            src="/assets/images/pdrop-down 2.png"></button>
+                    <mat-card
+                        class=" header w-[100vw] h-[14vh] bg-white mt-[6vh] ml-[-11vw] text-center font-semibold text-black"
+                        *ngIf="showElements">
+                        Madhan<br>manmadhan177@gmail.com<br><button
+                            class="header bg-white text-black border border-black rounded mt-2 font-semibold">Logout</button>
+                    </mat-card>
+                </span>
+
+
+            </div>
+
+            <div class="w-[83%] h-[78%] bg-white/60 ml-[9vw] mt-[6vh] border border-black rounded-2xl ">
+
+                <div class="flex justify-center"><button
+                        class=" items-center p-3 header flex w-[15vw] h-[6vh] ml-[2vw] bg-white text-black mt-3 font-semibold text-lg rounded-md border border-black hover:bg-gray-200">
+                        <form class="w-[10vw]">
+                            <select>
+                                <option>Intresting People's<img class=" mt-[0.1vh]"
+                                        src="/assets/images/pdrop-down 2.png"></option>
+                                <option value="Business People's">Business People's</option>
+                                <option value="Idea People's">Idea People's</option>
+                                <option value="Entertainment People's">Entertainment People's</option>
+                                <option value="Talented People's">Talented People's</option>
+                                <option value="Startup Plan People's">Startup Plan People's</option>
+                            </select>
+
+                        </form>
+                    </button>
+                    <!-- <button
+                    class="ml-[67vw] p-0 header gap-4 flex bg-white hover:bg-gray-300 text-black font-semibold py-1 px-8 rounded mt-2 border border-black"
+                    (click)="showListElements =!showListElements">Profile <img class=""
+                        src="/assets/images/pdrop-down 2.png"></button>
+                <mat-card class=" header w-[100vw] h-[14vh] bg-white mt-[6vh] ml-[-11vw] text-center text-black"
+                    *ngIf="showListElements">
+                    madhan<br>manmadhan177@gmail.com<br><button
+                        class="header bg-white text-black border border-black rounded mt-2 font-semibold">Logout</button>
+                </mat-card> -->
+                </div>
+
+                <div class="w-[90%] h-[90%] ml-[2vw]">
+                    <div class="w-[80%] h-[35%]  flex ml-[9vw] mt-[8vh] justify-between">
+                        <mat-card-title class="w-[15%] h-[110%] bg-white/60 border-[3px] border-black">
+                            <div class="w-[90%] h-[70%]  ml-1.5 mt-2">
+                                <img class="h-[100%]" src="/assets/images/arun 1.png">
+                            </div>
+                            <div class="w-[100%] h-[20%] bg-white mt-3 ">
+                                <h5>Name:madhan <br> Place:</h5>
+                            </div>
+                        </mat-card-title>
+                        <mat-card-title routerLink="/persondetails-view"
+                            class="w-[15%] h-[110%] bg-white/60 border-[3px] border-black">
+                            <div class="w-[90%] h-[70%]  ml-1.5 mt-2">
+                                <img class="h-[100%]" src="/assets/images/arun 2.png">
+                            </div>
+                            <div class="w-[100%] h-[20%] bg-white mt-3 ">
+                                <h5>Name:madhan <br> Place:</h5>
+                            </div>
+                        </mat-card-title>
+                        <mat-card-title class="w-[15%] h-[110%] bg-white/60 border-[3px] border-black">
+                            <div class="w-[90%] h-[70%]  ml-1.5 mt-2">
+                                <img class="h-[100%]" src="/assets/images/arun 1.png">
+                            </div>
+                            <div class="w-[100%] h-[20%] bg-white mt-3 ">
+                                <h5>Name:madhan <br> Place:</h5>
+                            </div>
+                        </mat-card-title>
+                        <mat-card-title class="w-[15%] h-[110%] bg-white/60 border-[3px] border-black">
+                            <div class="w-[90%] h-[70%]  ml-1.5 mt-2">
+                                <img class="h-[100%]" src="/assets/images/arun 2.png">
+                            </div>
+                            <div class="w-[100%] h-[20%] bg-white mt-3 ">
+                                <h5>Name:madhan <br> Place:</h5>
+                            </div>
+                        </mat-card-title>
+                    </div>
+                    <div class="w-[80%] h-[35%] flex ml-[9vw] mt-[8vh] justify-between">
+                        <mat-card-title class="w-[15%] h-[110%] bg-white/60 border-[3px] border-black">
+                            <div class="w-[90%] h-[70%]  ml-1.5 mt-2">
+                                <img class="h-[100%]" src="/assets/images/arun 1.png">
+                            </div>
+                            <div class="w-[100%] h-[20%] bg-white mt-3 ">
+                                <h5>Name:madhan <br> Place:</h5>
+                            </div>
+                        </mat-card-title>
+                        <mat-card-title class="w-[15%] h-[110%] bg-white/60 border-[3px] border-black">
+                            <div class="w-[90%] h-[70%]  ml-1.5 mt-2">
+                                <img class="h-[100%]" src="/assets/images/arun 2.png">
+                            </div>
+                            <div class="w-[100%] h-[20%] bg-white mt-3 ">
+                                <h5>Name:madhan <br> Place:</h5>
+                            </div>
+                        </mat-card-title>
+                        <mat-card-title class="w-[15%] h-[110%] bg-white/60 border-[3px] border-black">
+                            <div class="w-[90%] h-[70%]  ml-1.5 mt-2">
+                                <img class="h-[100%]" src="/assets/images/arun 1.png">
+                            </div>
+                            <div class="w-[100%] h-[20%] bg-white mt-3 ">
+                                <h5>Name:madhan <br> Place:</h5>
+                            </div>
+                        </mat-card-title>
+                        <mat-card-title class="w-[15%] h-[110%] bg-white/60 border-[3px] border-black">
+                            <div class="w-[90%] h-[70%]  ml-1.5 mt-2">
+                                <img class="h-[100%]" src="/assets/images/arun 2.png">
+                            </div>
+                            <div class="w-[100%] h-[20%] bg-white mt-3 ">
+                                <h5>Name:madhan <br> Place:</h5>
+                            </div>
+                        </mat-card-title>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
