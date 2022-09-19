@@ -5,7 +5,7 @@
 </head>
 <style>
     .container {
-        background-image: url("/assets/networkicon.svg");
+        background-image: url("/assets/networkbackgroundimg.svg");
         width: 100%;
         height: 100%;
         position: absolute;
@@ -30,37 +30,35 @@
 </style>
 
 <body>
-    <div class="relative mt-[0px] w-full h-full">
+    <div class="container absolute">
+        <div class="border-b-4 border-white w-[100%] h-[10%]">
+            <span class="header bg-white w-[10vw] h-[6vh] absolute  ml-[5vw] mt-[1.7vh] flex">
+                <img src="/assets/networklogo.png" class="w-[2vw] ml-1">
+                <span class="font-bold text-2xl text-center text-black ml-3 mt-1.5">NETWORK</span>
+                <div class="ml-[3vw]"><button
+                        class="header bg-white hover:bg-gray-300 text-black font-semibold py-1 px-2 rounded mt-2 border border-black">
+                        +Add
+                    </button></div>
+                <div class=""><button
+                        class="ml-[67vw] p-0 header gap-4 flex bg-white hover:bg-gray-300 text-black font-semibold py-1 px-8 rounded mt-2 border border-black">
+                        Profile <img class="" src="/assets/images/pdrop-down 2.png">
+                    </button>
+                </div>
+            </span>
 
-        <div class="container absolute">
-            <div class="border-b-4 border-white w-[100%] h-[10%]">
-                <span class="header bg-white w-[10vw] h-[6vh] absolute  ml-[5vw] mt-[1.7vh] flex">
-                    <img src="/assets/networklogo.png" class="w-[2vw] ml-1">
-                    <span class="font-bold text-2xl text-center text-black ml-3 mt-1.5">NETWORK</span>
-                    <div class="ml-[3vw]"><button
-                            class="header bg-white hover:bg-gray-300 text-black font-semibold py-1 px-2 rounded mt-2 border border-black">
-                            +Add
-                        </button></div>
-                    <div class=""><button
-                            class="ml-[67vw] p-0 header gap-4 flex bg-white hover:bg-gray-300 text-black font-semibold py-1 px-8 rounded mt-2 border border-black">
-                            Profile <img class="" src="/assets/images/pdrop-down 2.png">
-                        </button>
-                    </div>
-                </span>
 
+        </div>
+        <div class="w-[83%] h-[78%] bg-white/50 ml-[9vw] mt-[6vh] border border-black rounded-2xl ">
+            <div class="flex justify-center"><button
+                    class=" items-center p-5 header flex w-[12vw] h-[6vh] bg-white/60 text-black mt-3 font-semibold rounded-md border border-black hover:bg-gray-200">Add
+                    Personal Details</button>
 
             </div>
-            <div class="w-[83%] h-[78%] bg-white/50 ml-[9vw] mt-[6vh] border border-black rounded-2xl ">
-                <div class="flex justify-center"><button
-                        class=" items-center p-5 header flex w-[12vw] h-[6vh] bg-white/60 text-black mt-3 font-semibold rounded-md border border-black hover:bg-gray-200">Add
-                        Personal Details</button>
+            <div class="w-[90%] h-[85%] ml-[4vw]  flex">
+                <div class="w-[45%] h-[90%]  ml-[4vw] mt-[3vh] flex-col ">
+                    <div class="mb-3 w-[35vh] ml-[11vw] mt-[4vh]">
 
-                </div>
-                <div class="w-[90%] h-[85%] ml-[4vw]  flex">
-                    <div class="w-[45%] h-[90%]  ml-[4vw] mt-[3vh] flex-col ">
-                        <div class="mb-3 w-[35vh] ml-[11vw] mt-[4vh]">
-
-                            <input type="Text" name="name" class="
+                        <input type="Text" name="name" class="
                                 header
                                 block
                                 w-full
@@ -74,26 +72,26 @@
                                 m-0
                                 focus:text-gray-700 focus:bg-white focus:border-black focus:outline-none
                             " placeholder="Full Name" />
-                        </div>
-                        <div class="mb-3 w-[35vh] ml-[11vw] mt-[4vh]">
+                    </div>
+                    <div class="mb-3 w-[35vh] ml-[11vw] mt-[4vh]">
 
-                            <form>
-                                <select class="font-semibold p-2
+                        <form>
+                            <select class="font-semibold p-2
                                 text-gray-400 header w-[17vw]
                                 py-1.5  rounded">
-                                    <option>Tag</option>
-                                    <option value="">Business People's</option>
-                                    <option value="">Idea People's</option>
-                                    <option value="">Entertainment People's</option>
-                                    <option value="">Talented People's</option>
-                                    <option value="">Startup Plan People's</option>
-                                    <option value="">Create Your Own tag +</option>
-                                </select>
-                            </form>
-                        </div>
-                        <div class="mb-3 w-[35vh] ml-[11vw] mt-[4vh]">
+                                <option>Tag</option>
+                                <option value="">Business People's</option>
+                                <option value="">Idea People's</option>
+                                <option value="">Entertainment People's</option>
+                                <option value="">Talented People's</option>
+                                <option value="">Startup Plan People's</option>
+                                <option value="">Create Your Own tag +</option>
+                            </select>
+                        </form>
+                    </div>
+                    <div class="mb-3 w-[35vh] ml-[11vw] mt-[4vh]">
 
-                            <input type="Text" name="location" class="
+                        <input type="Text" name="location" class="
                                 header
                                 block
                                 w-full
@@ -107,10 +105,10 @@
                                 m-0
                               focus:text-gray-700 focus:bg-white focus:border-black focus:outline-none
                             " placeholder="Place" />
-                        </div>
-                        <div class="mb-3 w-[35vh] ml-[11vw] mt-[4vh]">
+                    </div>
+                    <div class="mb-3 w-[35vh] ml-[11vw] mt-[4vh]">
 
-                            <input type="Text" class="
+                        <input type="Text" class="
                                 header
                                 block
                                 w-full
@@ -124,10 +122,10 @@
                                 m-0
                               focus:text-gray-700 focus:bg-white focus:border-black focus:outline-none
                             " placeholder="Contact Number" />
-                        </div>
-                        <div class="mb-3 w-[35vh] ml-[11vw] mt-[4vh]">
+                    </div>
+                    <div class="mb-3 w-[35vh] ml-[11vw] mt-[4vh]">
 
-                            <input type="Text" class="
+                        <input type="Text" class="
                                 header
                                 block
                                 w-full
@@ -141,12 +139,12 @@
                                 m-0
                               focus:text-gray-700 focus:bg-white focus:border-black focus:outline-none
                             " placeholder="Instagram" />
-                        </div>
                     </div>
-                    <div class="w-[45%] h-[90%]  mt-[3vh]">
-                        <div class="mb-3 w-[35vh] ml-[5vw] mt-[4vh]">
+                </div>
+                <div class="w-[45%] h-[90%]  mt-[3vh]">
+                    <div class="mb-3 w-[35vh] ml-[5vw] mt-[4vh]">
 
-                            <input type="Text" class="
+                        <input type="Text" class="
                                 header
                                 block
                                 w-full
@@ -160,10 +158,10 @@
                                 m-0
                               focus:text-gray-700 focus:bg-white focus:border-black focus:outline-none
                             " placeholder="Facebook" />
-                        </div>
-                        <div class="mb-3 w-[35vh] ml-[5vw] mt-[4vh]">
+                    </div>
+                    <div class="mb-3 w-[35vh] ml-[5vw] mt-[4vh]">
 
-                            <input type="Text" class="
+                        <input type="Text" class="
                                 header
                                 block
                                 w-full
@@ -177,10 +175,10 @@
                                 m-0
                               focus:text-gray-700 focus:bg-white focus:border-black focus:outline-none
                             " placeholder="LinkedIn" />
-                        </div>
-                        <div class="mb-3 w-[35vh] ml-[5vw] mt-[4vh]">
+                    </div>
+                    <div class="mb-3 w-[35vh] ml-[5vw] mt-[4vh]">
 
-                            <div class="  header
+                        <div class="  header
                             block
                             w-full
                             px-3
@@ -191,12 +189,12 @@
                             border border-solid
                             rounded
                             m-0"> <label class="font-semibold text-gray-400">Photo</label>
-                                <input type="file" name="profile_pic" accept=".jpg, .jpeg, .png">
-                            </div>
+                            <input type="file" name="profile_pic" accept=".jpg, .jpeg, .png">
                         </div>
-                        <div class="mb-3 w-[35vh]  ml-[5vw] mt-[4vh]">
+                    </div>
+                    <div class="mb-3 w-[35vh]  ml-[5vw] mt-[4vh]">
 
-                            <input type="Text" class="
+                        <input type="Text" class="
                                 header
                                 block
                                 w-full
@@ -210,17 +208,17 @@
                                 m-0
                               focus:text-gray-700 focus:bg-white focus:border-black focus:outline-none
                             " placeholder="Description" />
-                        </div>
-
                     </div>
 
                 </div>
-                <span class="mt-[-5vh] flex justify-center"><button routerLink="/profilepage"
-                        class="header bg-white hover:bg-gray-300 text-black font-semibold py-1 px-6 rounded border border-black">
-                        Submit
-                    </button>
-                </span>
+
             </div>
+            <span class="mt-[-5vh] flex justify-center"><button routerLink="/profilepage"
+                    class="header bg-white hover:bg-gray-300 text-black font-semibold py-1 px-6 rounded border border-black">
+                    Submit
+                </button>
+            </span>
         </div>
     </div>
+
 </body>
