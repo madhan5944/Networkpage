@@ -21,6 +21,7 @@ import { ProfilepageComponent } from './profilepage/profilepage.component';
 import { HeaderComponent } from './header/header.component';
 import { PersonDetailsComponent } from './person-details/person-details.component';
 import { PersondetailssViewComponent } from './persondetailss-view/persondetailss-view.component';
+import { ProfileDropdownComponent } from './profile-dropdown/profile-dropdown.component';
 
 
 
@@ -36,7 +37,8 @@ import { PersondetailssViewComponent } from './persondetailss-view/persondetails
     ProfilepageComponent,
     HeaderComponent,
     PersonDetailsComponent,
-    PersondetailssViewComponent
+    PersondetailssViewComponent,
+    ProfileDropdownComponent
     
    
   ],

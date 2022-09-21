@@ -3,36 +3,6 @@
 <head>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<style>
-    .container {
-        background-image: url("/assets/networkbackgroundimg.svg");
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-    }
-
-    .title {
-        font-family: dosis;
-    }
-
-    .header {
-        font-family: dosis;
-    }
-
-    a {
-        font-family: dosis;
-        margin-top: 40px;
-        margin-left: 75px;
-    }
-
-    h5 {
-        font-size: small;
-        text-align: center;
-    }
-</style>
 
 <body>
 
@@ -52,16 +22,7 @@
                         </button>
 
                     </div> -->
-                <button
-                    class="ml-[67vw] p-0 header gap-4 flex bg-white hover:bg-gray-300 text-black font-semibold py-1 px-8 rounded mt-2 border border-black"
-                    (click)="showElements =!showElements">Profile <img class=""
-                        src="/assets/images/pdrop-down 2.png"></button>
-                <mat-card
-                    class=" header w-[100vw] h-[14vh] bg-white mt-[6vh] ml-[-11vw] text-center font-semibold text-black"
-                    *ngIf="showElements">
-                    Madhan<br>manmadhan177@gmail.com<br><button
-                        class="header bg-white text-black border border-black rounded mt-2 font-semibold">Logout</button>
-                </mat-card>
+                <app-profile-dropdown></app-profile-dropdown>
             </span>
 
 

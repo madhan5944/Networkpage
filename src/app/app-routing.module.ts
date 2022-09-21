@@ -8,6 +8,7 @@ import { ProfilepageComponent } from './profilepage/profilepage.component';
 import { HeaderComponent } from './header/header.component';
 import { PersonDetailsComponent } from './person-details/person-details.component';
 import { PersondetailssViewComponent } from './persondetailss-view/persondetailss-view.component';
+import { ProfileDropdownComponent } from './profile-dropdown/profile-dropdown.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path:'header',component:HeaderComponent},
   {path:'person-details',component: PersonDetailsComponent},
   {path:'persondetails-view',component:PersondetailssViewComponent},
+  {path:'profile-dropdown',component:ProfileDropdownComponent},
 ];
 
 @NgModule({
