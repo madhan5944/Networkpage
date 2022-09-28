@@ -26,3 +26,12 @@ h5 {
     font-size: small;
     text-align: center;
 }
+.scrollbox{
+    overflow: hidden;
+                overflow-y: auto;
+                
+}
+.scrollbox::-webkit-scrollbar {
+    display: none;
+    scroll-behavior: smooth;
+}

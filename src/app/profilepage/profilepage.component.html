@@ -42,17 +42,20 @@
                 </mat-card> -->
             </div>
 
-            <div class="w-[90%] h-[90%] ml-[2vw]">
-                <div class="w-[80%] h-[35%]  flex ml-[9vw] mt-[8vh] justify-between">
-                    <mat-card-title class="w-[15%] h-[110%] bg-white/60 border-[3px] border-black">
+            <div class="w-[90%] h-[90%] ml-[2vw] scrollbox">
+                <div class=" w-[80%] h-[38%]  flex ml-[9vw] mt-[8vh] justify-between  flex-wrap ">
+                    <mat-card-title *ngFor="let user of users "
+                        class="w-[25%] h-[120%] bg-white/60 border-[3px] border-black ">
                         <div class="w-[90%] h-[70%]  ml-1.5 mt-2">
-                            <img class="h-[100%]" src="/assets/images/arun 1.png">
+                            <img class="h-[100%] ml-6" src="{{user.image}}">
                         </div>
                         <div class="w-[100%] h-[20%] bg-white mt-3 ">
-                            <h5>Name:madhan <br> Place:</h5>
+                            <h5>Name:{{user.name}}<br>Place:{{user.place}}</h5>
+
                         </div>
                     </mat-card-title>
-                    <mat-card-title routerLink="/persondetails-view"
+
+                    <!-- <mat-card-title routerLink="/persondetails-view"
                         class="w-[15%] h-[110%] bg-white/60 border-[3px] border-black">
                         <div class="w-[90%] h-[70%]  ml-1.5 mt-2">
                             <img class="h-[100%]" src="/assets/images/arun 2.png">
@@ -74,11 +77,28 @@
                             <img class="h-[100%]" src="/assets/images/arun 2.png">
                         </div>
                         <div class="w-[100%] h-[20%] bg-white mt-3 ">
-                            <h5>Name:madhan <br> Place:</h5>
+                            <h5>Name:madhan <br> Place:</h5> 
                         </div>
-                    </mat-card-title>
+                    </mat-card-title> -->
                 </div>
-                <div class="w-[80%] h-[35%] flex ml-[9vw] mt-[8vh] justify-between">
+                <!-- <div class="w-[80%] h-[35%] flex ml-[9vw] mt-[8vh] justify-between">
+                    <mat-card-title *ngFor="let user of users"
+                        class="w-[15%] h-[110%] bg-white/60 border-[3px] border-black">
+                        <div class="w-[90%] h-[70%]  ml-1.5 mt-2">
+                            <img class="h-[100%]" src="{{user.image}}">
+                        </div>
+                        <div class="w-[100%] h-[20%] bg-white mt-3 ">
+                            <h5>Name:{{user.name}}<br>Place:{{user.place}}</h5>
+                        </div>
+                    </mat-card-title> -->
+                <!-- <mat-card-title class="w-[15%] h-[110%] bg-white/60 border-[3px] border-black">
+                        <div class="w-[90%] h-[70%]  ml-1.5 mt-2">
+                            <img class="h-[100%]" src="/assets/images/arun 2.png">
+                        </div>
+                        <div class="w-[100%] h-[20%] bg-white mt-3 ">
+                            <h5>Name:madhan <br> Place:</h5>
+                        </div>
+                    </mat-card-title>
                     <mat-card-title class="w-[15%] h-[110%] bg-white/60 border-[3px] border-black">
                         <div class="w-[90%] h-[70%]  ml-1.5 mt-2">
                             <img class="h-[100%]" src="/assets/images/arun 1.png">
@@ -94,30 +114,29 @@
                         <div class="w-[100%] h-[20%] bg-white mt-3 ">
                             <h5>Name:madhan <br> Place:</h5>
                         </div>
-                    </mat-card-title>
-                    <mat-card-title class="w-[15%] h-[110%] bg-white/60 border-[3px] border-black">
-                        <div class="w-[90%] h-[70%]  ml-1.5 mt-2">
-                            <img class="h-[100%]" src="/assets/images/arun 1.png">
-                        </div>
-                        <div class="w-[100%] h-[20%] bg-white mt-3 ">
-                            <h5>Name:madhan <br> Place:</h5>
-                        </div>
-                    </mat-card-title>
-                    <mat-card-title class="w-[15%] h-[110%] bg-white/60 border-[3px] border-black">
-                        <div class="w-[90%] h-[70%]  ml-1.5 mt-2">
-                            <img class="h-[100%]" src="/assets/images/arun 2.png">
-                        </div>
-                        <div class="w-[100%] h-[20%] bg-white mt-3 ">
-                            <h5>Name:madhan <br> Place:</h5>
-                        </div>
-                    </mat-card-title>
+                    </mat-card-title> -->
 
-                </div>
             </div>
         </div>
     </div>
+    <!-- </div> -->
 
 
+
+    <!-- <script>
+        const person = {
+            firstName: "madhan",
+            place: "guduvanchery",
+            images:"url: "
+
+            display: function () {
+                let card = document.getElementById("demo");
+                card.innerHTML = this.firstName + "<br> " + this.place;
+            }
+        } 
+
+        person.display();
+    </script> -->
 
 </body>
 

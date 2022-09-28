@@ -6,7 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./person-details.component.css']
 })
 export class PersonDetailsComponent implements OnInit {
-
+ 
+  users:any =[
+    { 
+      id:1,
+      fullName:'Madhan',
+      
+  
+    },
+    
+   
+   
+    
+  ];
   constructor() { }
 
   ngOnInit(): void {
