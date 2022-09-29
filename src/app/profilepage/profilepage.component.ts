@@ -8,154 +8,89 @@ import { UrlHandlingStrategy } from '@angular/router';
  
 })
 export class ProfilepageComponent implements OnInit {
-   
- public users =[
-  { 
-    image:"/assets/images/arun 1.png",
-    name:'Madhan',
-    place:'chennai',
 
-  },
-  { 
-    image:"/assets/images/arun 2.png",
-    name:'Abin',
-    place:'chennai',
-
-  },
-  { 
-    image:"/assets/images/arun 1.png",
-    name:'Arun',
-    place:'chennai',
-
-  },
-  { 
-    image:"/assets/images/arun 2.png",
-    name:'Sivaram',
-    place:'chennai',
-
-  },
-  { 
-    image:"/assets/images/arun 1.png",
-    name:'Sivaram',
-    place:'chennai',
-
-  },
-  { 
-    image:"/assets/images/arun 2.png",
-    name:'Sivaram',
-    place:'chennai',
-
-  },
-  { 
-    image:"/assets/images/arun 1.png",
-    name:'Sivaram',
-    place:'chennai',
-
-  },
-  { 
-    image:"/assets/images/arun 2.png",
-    name:'Sivaram',
-    place:'chennai',
-
-  },
-  { 
-    image:"/assets/images/arun 1.png",
-    name:'Sivaram',
-    place:'chennai',
-
-  },
-  { 
-    image:"/assets/images/arun 2.png",
-    name:'Sivaram',
-    place:'chennai',
-
-  },
-  { 
-    image:"/assets/images/arun 1.png",
-    name:'Sivaram',
-    place:'chennai',
-
-  },
-  { 
-    image:"/assets/images/arun 2.png",
-    name:'Sivaram',
-    place:'chennai',
-
-  },
-  { 
-    image:"/assets/images/arun 1.png",
-    name:'Sivaram',
-    place:'chennai',
-
-  },
-  { 
-    image:"/assets/images/arun 2.png",
-    name:'Sivaram',
-    place:'chennai',
-
-  },
-  { 
-    image:"/assets/images/arun 1.png",
-    name:'Sivaram',
-    place:'chennai',
-
-  },
-  { 
-    image:"/assets/images/arun 2.png",
-    name:'Sivaram',
-    place:'chennai',
-
-  },
-  { 
-    image:"/assets/images/arun 1.png",
-    name:'Sivaram',
-    place:'chennai',
-
-  },
-  { 
-    image:"/assets/images/arun 2.png",
-    name:'Sivaram',
-    place:'chennai',
-
-  },
-  { 
-    image:"/assets/images/arun 1.png",
-    name:'Sivaram',
-    place:'chennai',
-
-  },
-  { 
-    image:"/assets/images/arun 2.png",
-    name:'Sivaram',
-    place:'chennai',
-
-  },
-  { 
-    image:"/assets/images/arun 1.png",
-    name:'Sivaram',
-    place:'chennai',
-
-  },
-  { 
-    image:"/assets/images/arun 2.png",
-    name:'Sivaram',
-    place:'chennai',
-
-  },
-  { 
-    image:"/assets/images/arun 1.png",
-    name:'Sivaram',
-    place:'chennai',
-
-  },
-  { 
-    image:"/assets/images/arun 2.png",
-    name:'Sivaram',
-    place:'chennai',
-
-  },
- 
   
+ public users:{name: string; place: string; image: string}[] =[
+  {
+  image:"/assets/images/arun 1.png",
+  name:"Madhan",
+  place:"chennai",
+  },
+  {
+    image:"/assets/images/arun 2.png",
+    name:"Madhan",
+    place:"chennai",
+    },
+    {
+      image:"/assets/images/arun 1.png",
+      name:"Madhan",
+      place:"chennai",
+      },
+      {
+        image:"/assets/images/arun 2.png",
+        name:"Madhan",
+        place:"chennai",
+        },
+        {
+          image:"/assets/images/arun 1.png",
+          name:"Madhan",
+          place:"chennai",
+          },
+          {
+            image:"/assets/images/arun 2.png",
+            name:"Madhan",
+            place:"chennai",
+            },
+            {
+              image:"/assets/images/arun 1.png",
+              name:"Madhan",
+              place:"chennai",
+              },
+              {
+                image:"/assets/images/arun 2.png",
+                name:"Madhan",
+                place:"chennai",
+                },
+                {
+                  image:"/assets/images/arun 1.png",
+                  name:"Madhan",
+                  place:"chennai",
+                  },
+                  {
+                    image:"/assets/images/arun 2.png",
+                    name:"Madhan",
+                    place:"chennai",
+                    },
+                    {
+                      image:"/assets/images/arun 1.png",
+                      name:"Madhan",
+                      place:"chennai",
+                      },
+                      {
+                        image:"/assets/images/arun 2.png",
+                        name:"Madhan",
+                        place:"chennai",
+                        },
+                        {
+                          image:"/assets/images/arun 1.png",
+                          name:"Madhan",
+                          place:"chennai",
+                          },
+                          {
+                            image:"/assets/images/arun 2.png",
+                            name:"Madhan",
+                            place:"chennai",
+                            },
+                            {
+                              image:"/assets/images/arun 1.png",
+                              name:"Madhan",
+                              place:"chennai",
+                              },
+                              {
+                                image:"/assets/images/arun 2.png",
+                                name:"Madhan",
+                                place:"chennai",
+                                },
 ];
   constructor() { }
 
