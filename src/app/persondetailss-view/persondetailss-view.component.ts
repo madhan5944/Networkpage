@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 
 @Component({
   selector: 'app-persondetailss-view',
@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./persondetailss-view.component.css']
 })
 export class PersondetailssViewComponent implements OnInit {
+ @Input()receiver:any;
+  
 
+  
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }

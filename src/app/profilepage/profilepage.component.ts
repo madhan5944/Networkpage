@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import { UrlHandlingStrategy } from '@angular/router';
 
 @Component({
@@ -8,9 +8,13 @@ import { UrlHandlingStrategy } from '@angular/router';
  
 })
 export class ProfilepageComponent implements OnInit {
+showProfilePage:boolean=true;
+showPersonDetailsView:boolean=false;
+selectedReceiver:any;
+
 
   
- public users:{name: string; place: string; image: string}[] =[
+ public users =[
   {
   image:"/assets/images/arun 1.png",
   name:"Madhan",
@@ -18,27 +22,27 @@ export class ProfilepageComponent implements OnInit {
   },
   {
     image:"/assets/images/arun 2.png",
-    name:"Madhan",
+    name:"ArunKumar",
     place:"chennai",
     },
     {
       image:"/assets/images/arun 1.png",
-      name:"Madhan",
+      name:"Abin",
       place:"chennai",
       },
       {
         image:"/assets/images/arun 2.png",
-        name:"Madhan",
+        name:"Siva",
         place:"chennai",
         },
         {
           image:"/assets/images/arun 1.png",
-          name:"Madhan",
+          name:"Tazeen",
           place:"chennai",
           },
           {
             image:"/assets/images/arun 2.png",
-            name:"Madhan",
+            name:"Harish",
             place:"chennai",
             },
             {
@@ -91,13 +95,22 @@ export class ProfilepageComponent implements OnInit {
                                 name:"Madhan",
                                 place:"chennai",
                                 },
-];
+]
+currentUser:any;
   constructor() { }
 
   ngOnInit(): void {
   }
   showElements: boolean = false;
   showListElements: boolean=false;
+  selectCurrentUser(user:any){
+    console.log("hi",user);
+    this.currentUser=user;
+    this.showProfilePage=false;
+    this.showPersonDetailsView=true;
+  }
+ showElements1:boolean=false;
+ showListElement1:boolean=false;
   
 }
 

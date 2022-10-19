@@ -22,6 +22,8 @@ import { HeaderComponent } from './header/header.component';
 import { PersonDetailsComponent } from './person-details/person-details.component';
 import { PersondetailssViewComponent } from './persondetailss-view/persondetailss-view.component';
 import { ProfileDropdownComponent } from './profile-dropdown/profile-dropdown.component';
+import { FormsModule } from '@angular/forms';
+import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
 
 
 
@@ -29,6 +31,7 @@ import { ProfileDropdownComponent } from './profile-dropdown/profile-dropdown.co
 
 @NgModule({
   declarations: [
+    
     AppComponent,
     LoginpageComponent,
     routingComponents,
@@ -38,7 +41,10 @@ import { ProfileDropdownComponent } from './profile-dropdown/profile-dropdown.co
     HeaderComponent,
     PersonDetailsComponent,
     PersondetailssViewComponent,
-    ProfileDropdownComponent
+    ProfileDropdownComponent,
+    
+    
+
     
    
   ],
@@ -55,7 +61,10 @@ import { ProfileDropdownComponent } from './profile-dropdown/profile-dropdown.co
     MatIconModule,
     MatCardModule,
     MatSidenavModule,
-    MatInputModule
+    FormsModule ,
+    MatInputModule,
+    NgMultiSelectDropDownModule
+  
     
    
   ],

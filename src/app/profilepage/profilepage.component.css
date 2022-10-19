@@ -35,3 +35,39 @@ h5 {
     display: none;
     scroll-behavior: smooth;
 }
+form{
+    width: 250px; 
+  box-sizing: border-box;
+  position: absolute;
+  height: 250px;
+  left: 405px;
+  top: 55px;
+  font-family: 'Dosis';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  display: flex;
+  color: #000000;
+}
+fieldset{
+    width: 250px;
+    border-radius: 8px;
+    background: #FFFFFF; 
+}
+#selectorbox{
+    width: 180px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left:30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.selector{
+    border: 1px solid #2F4550;
+    border-radius: 8px;
+}
+.selectbutton{
+    width: 25px;
+    height: 20px;
+}

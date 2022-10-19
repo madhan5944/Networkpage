@@ -21,3 +21,7 @@ a {
     margin-top: 40px;
     margin-left: 75px;
 }
+::placeholder {
+    color: gray;
+   
+  }

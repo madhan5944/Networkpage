@@ -11,3 +11,7 @@
 .header {
     font-family: dosis;
 }
+::placeholder {
+    color:gray;
+   
+  }
