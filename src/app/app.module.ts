@@ -24,14 +24,19 @@ import { PersondetailssViewComponent } from './persondetailss-view/persondetails
 import { ProfileDropdownComponent } from './profile-dropdown/profile-dropdown.component';
 import { FormsModule } from '@angular/forms';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
+import {MatChipsModule} from '@angular/material/chips';
+import {MatAutocompleteModule} from '@angular/material/autocomplete';
+import { Chipsautocompleteexamplecomponent } from './chips-autocomplete-example/chips-autocomplete-example.component';
+import { ReactiveFormsModule} from '@angular/forms';
+
 
 
 
 
 
 @NgModule({
+
   declarations: [
-    
     AppComponent,
     LoginpageComponent,
     routingComponents,
@@ -42,11 +47,7 @@ import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
     PersonDetailsComponent,
     PersondetailssViewComponent,
     ProfileDropdownComponent,
-    
-    
-
-    
-   
+    Chipsautocompleteexamplecomponent
   ],
   imports: [
     BrowserModule,
@@ -63,11 +64,13 @@ import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
     MatSidenavModule,
     FormsModule ,
     MatInputModule,
-    NgMultiSelectDropDownModule
-  
-    
-   
+    NgMultiSelectDropDownModule ,
+    MatChipsModule,
+    MatAutocompleteModule,
+     ReactiveFormsModule
   ],
+  exports:[MatFormFieldModule,Chipsautocompleteexamplecomponent],
+ 
   providers: [],
   bootstrap: [AppComponent]
 })

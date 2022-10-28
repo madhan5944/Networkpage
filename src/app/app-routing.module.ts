@@ -9,6 +9,7 @@ import { HeaderComponent } from './header/header.component';
 import { PersonDetailsComponent } from './person-details/person-details.component';
 import { PersondetailssViewComponent} from './persondetailss-view/persondetailss-view.component';
 import { ProfileDropdownComponent } from './profile-dropdown/profile-dropdown.component';
+import { Chipsautocompleteexamplecomponent } from './chips-autocomplete-example/chips-autocomplete-example.component';
 
 
 
@@ -22,8 +23,9 @@ const routes: Routes = [
   {path:'profilepage',component:ProfilepageComponent},
   {path:'header',component:HeaderComponent},
   {path:'person-details',component: PersonDetailsComponent},
-  {path:'persondetailss-view',component: PersondetailssViewComponent},
+  {path:'persondetailss-view/:id',component: PersondetailssViewComponent},
   {path:'profile-dropdown',component:ProfileDropdownComponent},
+  {path:'chips-autocomplete',component:Chipsautocompleteexamplecomponent}
   
 ];
 

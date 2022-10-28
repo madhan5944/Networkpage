@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 
 
+
 @Component({
   selector: 'app-person-details',
   templateUrl: './person-details.component.html',
@@ -11,8 +12,6 @@ import { NgForm } from '@angular/forms';
 export class PersonDetailsComponent implements OnInit {
   
  
-        
-
   public personForm:{fullName: string; place: string; contact:number; instagram:any; facebook:any; linkedin:any; description:any;}[] =[
     {
     
