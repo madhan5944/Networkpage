@@ -2,18 +2,18 @@
     <mat-label class="text-gray-700 header font-semibold ">Favorite Tags</mat-label>
     <mat-chip-list #chipList aria-label="Fruit selection">
         <mat-chip *ngFor="let tag of tags" (removed)="remove(tag)">
-            {{tags}}
+            {{tag}}
             <button matChipRemove>
                 <mat-icon><img src="/assets/images/cancel.png"></mat-icon>
             </button>
         </mat-chip>
-        <input placeholder="Tags Selection" #fruitInput [formControl]="tagsCtrl" [matAutocomplete]="auto"
+        <input placeholder="Tags Selection" #fruitInput [formControl]="tagCtrl" [matAutocomplete]="auto"
             [matChipInputFor]="chipList" [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
             (matChipInputTokenEnd)="add($event)">
     </mat-chip-list>
     <mat-autocomplete #auto="matAutocomplete" (optionSelected)="selected($event)">
-        <mat-option *ngFor="let tags of filteredtags| async" [value]="tags">
-            {{tags}}
+        <mat-option *ngFor="let tag of filteredtags| async" [value]="tag">
+            {{tag}}
         </mat-option>
     </mat-autocomplete>
 </mat-form-field>

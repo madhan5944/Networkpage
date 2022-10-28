@@ -15,16 +15,16 @@ import {map, startWith} from 'rxjs/operators';
 })
 export class Chipsautocompleteexamplecomponent {
   separatorKeysCodes: number[] = [ENTER, COMMA];
-  tagsCtrl = new FormControl('');
+  tagCtrl = new FormControl('');
   filteredtags: Observable<string[]>;
   tags: string[] = ['Lemon'];
   alltags: string[] = ['Apple', 'Lemon', 'Lime', 'Orange', 'Strawberry'];
   // fruitInput:ElementRef<HTMLInputElement>;
 
-  @ViewChild('tagsInput') tagsInput !: ElementRef<HTMLInputElement>;
+  @ViewChild('tagInput') tagInput !: ElementRef<HTMLInputElement>;
 
   constructor() {
-    this.filteredtags = this.tagsCtrl.valueChanges.pipe(
+    this.filteredtags = this.tagCtrl.valueChanges.pipe(
       startWith(null),
       map((tags: string | null) => (tags ? this._filter(tags) : this.alltags.slice())),
     );
@@ -41,11 +41,11 @@ export class Chipsautocompleteexamplecomponent {
     // Clear the input value
     event.chipInput!.clear();
 
-    this.tagsCtrl.setValue(null);
+    this.tagCtrl.setValue(null);
   }
 
-  remove(tags: string): void {
-    const index = this.tags.indexOf(tags);
+  remove(tag: string): void {
+    const index = this.tags.indexOf(tag);
 
     if (index >= 0) {
       this.tags.splice(index, 1);
@@ -54,8 +54,8 @@ export class Chipsautocompleteexamplecomponent {
 
   selected(event: MatAutocompleteSelectedEvent): void {
     this.tags.push(event.option.viewValue);
-    this.tagsInput.nativeElement.value = '';
-    this.tagsCtrl.setValue(null);
+    this.tagInput.nativeElement.value = '';
+    this.tagCtrl.setValue(null);
   }
 
   private _filter(value: string): string[] {
