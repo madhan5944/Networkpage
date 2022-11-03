@@ -65,12 +65,21 @@
                         " placeholder="Password" />
                 </div>
             </div>
-            <span class="mt-[3vh] flex justify-center"><button routerLink="/profilepage"
+
+            <span class="mt-[3vh] flex justify-center"><button (click)="formData()" routerLink="/profilepage"
                     class="header bg-white hover:bg-gray-300 text-black font-semibold py-1 px-2 rounded-md border-2 border-black">
                     Submit
                 </button>
             </span>
+            <!-- <span class="mt-[3vh] flex justify-center ml-[5vw]"><button (click)="LoadData()"
+                    class="header bg-white hover:bg-gray-300 text-black font-semibold py-1 px-2 rounded-md border-2 border-black">
+                    LoadData
+                </button>
+            </span> -->
 
+            <h1>{{logindata.id}}</h1>
+            <h2>{{logindata.username}}</h2>
+            <h3>{{logindata.password}}</h3>
 
 
 
