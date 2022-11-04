@@ -17,7 +17,7 @@ export class Chipsautocompleteexamplecomponent {
   separatorKeysCodes: number[] = [ENTER, COMMA];
   tagCtrl = new FormControl('');
   filteredtags: Observable<string[]>;
-  tags: string[] = ['Business Peoples'];
+  tags: string[] = [];
   alltags: string[] = ['Business Peoples', 'Idea Peoples', 'Entertainment Peoples', 'Talented Peoples', 'Starup Plan Peoples'];
   // fruitInput:ElementRef<HTMLInputElement>;
 

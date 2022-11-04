@@ -86,8 +86,9 @@
         </div>
 
         <div class="w-[90%] h-[80%] ml-[2vw] scrollbox">
-            <div class=" w-[85%] h-[38%]  flex ml-[9vw] mt-[5vh]  gap-10 flex-wrap ">
-                <div *ngFor="let user of users" class="w-[20%] h-[120%] bg-white/60 border-[3px] border-black"
+            <div class=" w-[85%] h-[38%]  flex ml-[9vw] mt-[2vh]  gap-10 flex-wrap scale-85">
+                <div *ngFor="let user of users"
+                    class="w-[20%] h-[120%] bg-white/60 border-[3px] border-black transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110  duration-300"
                     [routerLink]="['/persondetailss-view',user.userid]">
                     <div routerLink="/app-persondetailss-view" class="w-[90%] h-[70%]  ml-1.5 mt-2">
                         <img class="h-[100%] ml-3" src="{{user.image}}">

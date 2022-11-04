@@ -13,7 +13,8 @@
             <span class="font-bold text-2xl text-center text-black ml-3 mt-1.5">NETWORK</span>
         </span></div>
 
-    <div class="w-[40%] h-[52%] bg-white/30 ml-[28vw] mt-[25vh] border border-black rounded-2xl ">
+    <form [formGroup]="signuppage" (ngSubmit)="onSubmit()"
+        class="w-[40%] h-[52%] bg-white/30 ml-[28vw] mt-[25vh] border border-black rounded-2xl ">
         <span class="mt-[3vh] flex justify-center"><button
                 class=" header py-1 px-2 bg-white text-black rounded  font-semibold border border-black"
                 href="https://www.google.com/" target="_blank">SignUp</button>
@@ -21,7 +22,7 @@
         <div class="flex justify-center">
             <div class="mb-3 w-[35vh] mt-[3vh]">
 
-                <input type="text" name="email" class="
+                <input type="text" id="email" formControlName="mail" name="email" value="" class="
                           header
                           font-semibold
                           w-full
@@ -39,7 +40,7 @@
         <div class="flex justify-center">
             <div class="mb-3 w-[35vh] mt-[3vh]">
 
-                <input type="text" name="name" class="
+                <input type="text" id="username" formControlName="username" name="name" value="" class="
                         header
                           font-semibold
                           w-full
@@ -57,7 +58,7 @@
         <div class="flex justify-center">
             <div class="mb-3 w-[35vh] mt-[3vh]">
 
-                <input type="password" class="
+                <input type="password" id="password" formControlName="password" value="" class="
                         header
                           font-semibold
                           w-full
@@ -72,8 +73,8 @@
                         " placeholder="Password" />
             </div>
         </div>
-        <span class="mt-[3vh] flex justify-center"><button routerLink="/profilepage"
-                class="header bg-white hover:bg-gray-300 text-black font-semibold py-1 px-2 rounded border border-black">
+        <span class=" mt-[3vh] flex justify-center"><button routerLink="/profilepage" class=" 
+                    header bg-white hover:bg-gray-300 text-black font-semibold py-1 px-2 rounded border border-black">
                 Submit
             </button>
         </span>
@@ -82,10 +83,10 @@
 
 
 
-    </div>
 
 
 
+    </form>
 </body>
 
 </html>
