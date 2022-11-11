@@ -51,7 +51,7 @@
                 </div>
                 <div class="w-[29vw] h-[30vh] border border-white/50 header">
                     <div class="flex space-x-[12vw] w-[29vw] h-[5vh] text-white font-semibold">
-                        <div class="flex items-center pl-2 gap-2"><img src="/assets/images/location.png">Chennai
+                        <div class="flex items-center pl-2 gap-2"><img src="/assets/images/location.png">{{getid.place}}
                         </div>
                         <div class="flex items-center gap-1"><img src="/assets/images/contact.png">9789212608</div>
                     </div>
@@ -77,9 +77,21 @@
 
 
         </div>
-        <img class="ml-[63vw] mt-[-29vh] h-[5vh]" src="/assets/images/rigtharrow.png">
-        <img routerLink="" class="ml-[6vw] mt-[-5.5vh] h-[5vh]" src="/assets/images/leftarrow.png">
+
+        <img class="ml-[63vw] mt-[-29vh] h-[5vh]" (click)="prev()" src="/assets/images/rigtharrow.png">
+
+
+        <img (click)="next()" class="ml-[6vw] mt-[-5.5vh] h-[5vh]" src="/assets/images/leftarrow.png">
     </div>
+
+    <!-- <ul>
+        <li *ngFor="let user of users let userid=index">
+            <button type="button" (click)="next(user, getid.userid)">Next</button>
+            <button type="button" (click)="previous(user, userid)">Previous</button>
+
+        </li>
+    </ul> -->
+
 
 
 </body>

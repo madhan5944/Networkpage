@@ -25,7 +25,8 @@ const routes: Routes = [
   {path:'person-details',component: PersonDetailsComponent},
   {path:'persondetailss-view/:id',component: PersondetailssViewComponent},
   {path:'profile-dropdown',component:ProfileDropdownComponent},
-  {path:'chips-autocomplete',component:Chipsautocompleteexamplecomponent}
+  {path:'chips-autocomplete',component:Chipsautocompleteexamplecomponent},
+
   
 ];
 

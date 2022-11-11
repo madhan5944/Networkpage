@@ -28,6 +28,8 @@ import {MatChipsModule} from '@angular/material/chips';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { Chipsautocompleteexamplecomponent } from './chips-autocomplete-example/chips-autocomplete-example.component';
 import { ReactiveFormsModule} from '@angular/forms';
+import { NgxPaginationModule } from 'ngx-pagination';
+
 
 
 
@@ -67,7 +69,9 @@ import { ReactiveFormsModule} from '@angular/forms';
     NgMultiSelectDropDownModule ,
     MatChipsModule,
     MatAutocompleteModule,
-     ReactiveFormsModule
+     ReactiveFormsModule,
+      NgxPaginationModule
+     
   ],
   exports:[MatFormFieldModule,Chipsautocompleteexamplecomponent],
  

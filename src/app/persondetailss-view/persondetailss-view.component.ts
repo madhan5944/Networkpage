@@ -1,6 +1,16 @@
 import { Component, OnInit,Input } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
-import{Router,UrlSerializer} from '@angular/router';
+import{Router,UrlSerializer,} from '@angular/router';
+import {
+
+  EventEmitter,
+ 
+  OnChanges,
+  Output,
+  SimpleChanges,
+} from '@angular/core'
+
+
 type details = Array<{ id: number; name: string }>;
 @Component({
   selector: 'app-persondetailss-view',
@@ -8,22 +18,28 @@ type details = Array<{ id: number; name: string }>;
   styleUrls: ['./persondetailss-view.component.css']
 })
 export class PersondetailssViewComponent implements OnInit {
-
-
+ 
 
 constructor(private router: Router,private route: ActivatedRoute) { };
 id:any;
 getid:any;
+
+
 @Input () receiver:any;
   ngOnInit(): void {
-     this.route.paramMap.subscribe((params: ParamMap) => {
+
+
+    this.route.paramMap.subscribe((params: ParamMap) => {
       if(params.get('id')!==null){
         this.id=params.get('id');
         console.log(typeof this.id)
       }
       
+      
     });
-    this.getid=this.users.find((user)=>user.userid === +this.id)  
+    
+       this.getid=this.users.find((user)=>user.userid === +this.id)  
+   
   }
  public users:{userid:any; image:string;name:string;place:string;}[]=[    {
       userid: 1,
@@ -46,7 +62,7 @@ getid:any;
     { userid:4,
       image: '/assets/images/arun 2.png',
       name: 'Siva',
-      place: 'chennai',
+      place: 'Thirunalvalli',
     },
     {userid:5,
       image: '/assets/images/arun 1.png',
@@ -110,5 +126,47 @@ getid:any;
       place: 'chennai',
     },
   ];
+
+currentuser ={userid:1};
+
+    setTab(user) {
+        this.currentuser = user;
+    }
+
+    prev() {
+        if (this.currentuser !== this.users[0]) {
+            const curruser = this.currentuser;
+            const i = this.users.findIndex(function (el) {
+                return el === curruser;
+            });
+            this.currentuser = this.users[i - 1];
+        }
+        console.log(this.currentuser)
+    }
+
+    next() {
+        if (this.currentuser !== this.users[this.users.length - 1]) {
+            const currTab = this.currentuser;
+            const i = this.users.findIndex(function (el) {
+                return el === currTab;
+            });
+            this.currentuser = this.users[i + 1];
+        }
+    }
+//   next(user: any, userid: number) {  
+//     if (userid - 1 < 0) {  
+//         return;  
+//     }  
+//     this.users[userid] = this.users[userid - 1];  
+//     this.users[userid - 1] = user;  
+// }  
+// previous(user: any, userid: number) {  
+//     if (userid + 1 >= this.users.length) {  
+//         return;  
+//     }  
+//     this.users[userid] = this.users[userid + 1];  
+//     this.users[userid + 1] = user;  
+// }  
+
 
 }
