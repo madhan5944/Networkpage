@@ -43,45 +43,38 @@
                     <div class="w-[29vw]   h-[5vh] text-center text-black header text-3xl font-bold">
                         {{getid.name}}</div>
                     <div class=" w-[29vw] h-[9vh] header font-semibold text-black">
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Intresting
-                        people, Idea people,
-                        Business
-                        people<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;Startup people, Sport people</div>
+                        {{getid.people}}</div>
                 </div>
                 <div class="w-[29vw] h-[30vh] border border-white/50 header">
                     <div class="flex space-x-[12vw] w-[29vw] h-[5vh] text-white font-semibold">
                         <div class="flex items-center pl-2 gap-2"><img src="/assets/images/location.png">{{getid.place}}
                         </div>
-                        <div class="flex items-center gap-1"><img src="/assets/images/contact.png">9789212608</div>
+                        <div class="flex items-center gap-1"><img src="/assets/images/contact.png">{{getid.contact}}
+                        </div>
                     </div>
                     <div class="flex space-x-[10vw]  w-[29vw] h-[5vh] text-white font-semibold mt-1">
-                        <div class="flex items-center pl-2 gap-2"><img src="/assets/images/insta.png">Madhan177
+                        <div class="flex items-center pl-2 gap-2"><img src="/assets/images/insta.png">{{getid.instaId}}
                         </div>
-                        <div class="flex items-center pl-3 gap-2"><img src="/assets/images/facebook.png">MadhanMaddy
+                        <div class="flex items-center pl-3 gap-2"><img
+                                src="/assets/images/facebook.png">{{getid.facebookId}}
                         </div>
                     </div>
                     <div class=" w-[29vw] h-[5vh] flex text-white font-semibold pl-2 gap-2 items-center mt-1">
                         <img class="h-6" src="/assets/images/linkedin.png">
-                        https://www.linkedin.com/in/madhan5944/
+                        {{getid.linkedIn}}
                     </div>
                     <div class="flex text-white font-semibold items-center pl-2 gap-2 mt-3"><img class="h-6 mt-[-4vh]"
-                            src="/assets/images/description.png">I have always
-                        been
-                        interested in web
-                        and
-                        I have the necessary skills required for the role.
-                        I have a good understanding of HTML, CSS, JavaScript</div>
+                            src="/assets/images/description.png">{{getid.description}}</div>
                 </div>
             </div>
 
 
         </div>
 
-        <img class="ml-[63vw] mt-[-29vh] h-[5vh]" (click)="prev()" src="/assets/images/rigtharrow.png">
+        <img class="ml-[63vw] mt-[-29vh] h-[5vh]" (click)="next()" src="/assets/images/rigtharrow.png">
 
 
-        <img (click)="next()" class="ml-[6vw] mt-[-5.5vh] h-[5vh]" src="/assets/images/leftarrow.png">
+        <img (click)="prev()" class="ml-[6vw] mt-[-5.5vh] h-[5vh]" src="/assets/images/leftarrow.png">
     </div>
 
     <!-- <ul>

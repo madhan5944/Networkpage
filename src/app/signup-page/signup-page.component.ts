@@ -8,23 +8,42 @@ import { Router } from '@angular/router';
   styleUrls: ['./signup-page.component.css']
 })
 export class SignupPageComponent implements OnInit {
-    signuppage!: FormGroup; 
-  constructor(private router: Router) {}
-
-  ngOnInit(): void { 
-    this.signuppage = new FormGroup({
-      'mail' : new FormControl(null),
-      'username' : new FormControl(null),
-           'password' : new FormControl(null),
-    });
-}
   
+
+ 
+   signuppage = new FormGroup({
+      'mail' : new FormControl(null,[Validators.required,Validators.email]),
+      'username' : new FormControl(null,Validators.required),
+           'password' : new FormControl(null,[Validators.required ,Validators.pattern('^(?=[^A-Z]*[A-Z])(?=[^a-z]*[a-z])(?=\\D*\\d)[A-Za-z\\d!$%@#£€*?&]{8,}$')]),
+    });
+ ngOnInit() {  
+  }
+
+constructor(private router: Router) {}
+  goToprofile() {
+    this.router.navigate(['./profilepage']);
+  }
  onSubmit(){
  localStorage.setItem('User', JSON.stringify(this.signuppage.value));
-
-
+this.signuppage.reset(); 
+this.goToprofile();
 
  }
+
+ get vmail(){
+return this.signuppage.get("mail")
+ }
+ get vusername(){
+return this.signuppage.get("username")
+ }
+  get vpassword(){
+return this.signuppage.get("password")
+ }
+ goTohome(){
+  this.router.navigate(['./welcome']);
+ }
+
+
 
 }
 // formData(){

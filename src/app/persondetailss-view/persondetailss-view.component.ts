@@ -41,117 +41,225 @@ getid:any;
        this.getid=this.users.find((user)=>user.userid === +this.id)  
    
   }
- public users:{userid:any; image:string;name:string;place:string;}[]=[    {
+ public users:{userid:any; image:string;name:string;place:string; contact:number;instaId:string; facebookId:string;linkedIn:string; description:string; people:string;}[]=[    {
       userid: 1,
       image: "/assets/images/arun 1.png",
       name: 'Madhan',
-      place: 'chennai',
-    },
+       people:" Intresting people, Idea people,Business people,Startup people, Sport people",
+      place: 'Chennai',
+      contact:9789212608,
+      instaId:"madhan177",
+      facebookId:"maddymadhan",
+      linkedIn:" https://www.linkedin.com/in/madhan5944/",
+      description:"I have always been interested in web and I have the necessary skills required for the role.I have a good understanding of HTML, CSS, JavaScript"
+},
     {
       userid: 2,
       image: '/assets/images/arun 2.png',
       name: 'ArunKumar',
-      place: 'chennai',
+       people:" Intresting people, Idea people,Business people,Startup people, Sport people",
+      place: 'Neiveli',
+       contact:9789212608,
+       instaId:"madhan177",
+      facebookId:"maddymadhan",
+      linkedIn:" https://www.linkedin.com/in/madhan5944/",
+      description:"I have always been interested in web and I have the necessary skills required for the role.I have a good understanding of HTML, CSS, JavaScript"
     },
     {
       userid: 3,
       image: '/assets/images/arun 1.png',
       name: 'Abin',
-      place: 'chennai',
+       people:" Intresting people, Idea people,Business people,Startup people, Sport people",
+      place: 'Gudalur',
+       contact:9789212608,
+       instaId:"madhan177",
+      facebookId:"maddymadhan",
+      linkedIn:" https://www.linkedin.com/in/madhan5944/",
+      description:"I have always been interested in web and I have the necessary skills required for the role.I have a good understanding of HTML, CSS, JavaScript"
     },
     { userid:4,
       image: '/assets/images/arun 2.png',
       name: 'Siva',
-      place: 'Thirunalvalli',
+       people:" Intresting people, Idea people,Business people,Startup people, Sport people",
+      place: 'Thirunalveli',
+      contact:9789212608,
+      instaId:"madhan177",
+      facebookId:"maddymadhan",
+      linkedIn:" https://www.linkedin.com/in/madhan5944/",
+      description:"I have always been interested in web and I have the necessary skills required for the role.I have a good understanding of HTML, CSS, JavaScript"
     },
     {userid:5,
       image: '/assets/images/arun 1.png',
       name: 'Tazeen',
-      place: 'chennai',
+       people:" Intresting people, Idea people,Business people,Startup people, Sport people",
+      place: 'Hosur',
+      contact:9789212608,
+      instaId:"madhan177",
+      facebookId:"maddymadhan",
+      linkedIn:" https://www.linkedin.com/in/madhan5944/",
+      description:"I have always been interested in web and I have the necessary skills required for the role.I have a good understanding of HTML, CSS, JavaScript"
+
     },
     {userid:6,
       image: '/assets/images/arun 2.png',
       name: 'Harish',
+       people:" Intresting people, Idea people,Business people,Startup people, Sport people",
       place: 'chennai',
+        contact:9789212608,
+        instaId:"madhan177",
+      facebookId:"maddymadhan",
+      linkedIn:" https://www.linkedin.com/in/madhan5944/",
+      description:"I have always been interested in web and I have the necessary skills required for the role.I have a good understanding of HTML, CSS, JavaScript"
     },
-    {userid:7,
-      image: '/assets/images/arun 1.png',
+     {
+      userid: 7,
+      image: "/assets/images/arun 1.png",
       name: 'Madhan',
-      place: 'chennai',
-    },
-    {userid:8,
+       people:" Intresting people, Idea people,Business people,Startup people, Sport people",
+      place: 'Chennai',
+      contact:9789212608,
+      instaId:"madhan177",
+      facebookId:"maddymadhan",
+      linkedIn:" https://www.linkedin.com/in/madhan5944/",
+      description:"I have always been interested in web and I have the necessary skills required for the role.I have a good understanding of HTML, CSS, JavaScript"
+},
+    {
+      userid: 8,
       image: '/assets/images/arun 2.png',
-      name: 'Madhan',
-      place: 'chennai',
+      name: 'ArunKumar',
+      people:" Intresting people, Idea people,Business people,Startup people, Sport people",
+      place: 'Neiveli',
+       contact:9789212608,
+       instaId:"madhan177",
+      facebookId:"maddymadhan",
+      linkedIn:" https://www.linkedin.com/in/madhan5944/",
+      description:"I have always been interested in web and I have the necessary skills required for the role.I have a good understanding of HTML, CSS, JavaScript"
     },
-    {userid:9,
+    {
+      userid: 9,
       image: '/assets/images/arun 1.png',
-      name: 'Madhan',
-      place: 'chennai',
+      name: 'Abin',
+       people:" Intresting people, Idea people,Business people,Startup people, Sport people",
+      place: 'Gudalur',
+       contact:9789212608,
+       instaId:"madhan177",
+      facebookId:"maddymadhan",
+      linkedIn:" https://www.linkedin.com/in/madhan5944/",
+      description:"I have always been interested in web and I have the necessary skills required for the role.I have a good understanding of HTML, CSS, JavaScript"
     },
-    {userid:10,
+    { userid:10,
       image: '/assets/images/arun 2.png',
-      name: 'Madhan',
-      place: 'chennai',
+      name: 'Siva',
+       people:" Intresting people, Idea people,Business people,Startup people, Sport people",
+      place: 'Thirunalveli',
+      contact:9789212608,
+      instaId:"madhan177",
+      facebookId:"maddymadhan",
+      linkedIn:" https://www.linkedin.com/in/madhan5944/",
+      description:"I have always been interested in web and I have the necessary skills required for the role.I have a good understanding of HTML, CSS, JavaScript"
     },
-   
     {userid:11,
-      image: '/assets/images/arun 2.png',
-      name: 'Madhan',
-      place: 'chennai',
+      image: '/assets/images/arun 1.png',
+      name: 'Tazeen',
+       people:" Intresting people, Idea people,Business people,Startup people, Sport people",
+      place: 'Hosur',
+      contact:9789212608,
+      instaId:"madhan177",
+      facebookId:"maddymadhan",
+      linkedIn:" https://www.linkedin.com/in/madhan5944/",
+      description:"I have always been interested in web and I have the necessary skills required for the role.I have a good understanding of HTML, CSS, JavaScript"
+
     },
     {userid:12,
-      image: '/assets/images/arun 1.png',
-      name: 'Madhan',
-      place: 'chennai',
-    },
-    {userid:13,
       image: '/assets/images/arun 2.png',
-      name: 'Madhan',
+      name: 'Harish',
+       people:" Intresting people, Idea people,Business people,Startup people, Sport people",
       place: 'chennai',
+        contact:9789212608,
+        instaId:"madhan177",
+      facebookId:"maddymadhan",
+      linkedIn:" https://www.linkedin.com/in/madhan5944/",
+      description:"I have always been interested in web and I have the necessary skills required for the role.I have a good understanding of HTML, CSS, JavaScript"
     },
-    {userid:14,
-      image: '/assets/images/arun 1.png',
+
+    {
+      userid: 13,
+      image: "/assets/images/arun 1.png",
       name: 'Madhan',
-      place: 'chennai',
-    },
-    {userid:15,
+       people:" Intresting people, Idea people,Business people,Startup people, Sport people",
+      place: 'Chennai',
+      contact:9789212608,
+      instaId:"madhan177",
+      facebookId:"maddymadhan",
+      linkedIn:" https://www.linkedin.com/in/madhan5944/",
+      description:"I have always been interested in web and I have the necessary skills required for the role.I have a good understanding of HTML, CSS, JavaScript"
+},
+    {
+      userid: 14,
       image: '/assets/images/arun 2.png',
-      name: 'Madhan',
-      place: 'chennai',
+      name: 'ArunKumar',
+       people:" Intresting people, Idea people,Business people,Startup people, Sport people",
+      place: 'Neiveli',
+       contact:9789212608,
+       instaId:"madhan177",
+      facebookId:"maddymadhan",
+      linkedIn:" https://www.linkedin.com/in/madhan5944/",
+      description:"I have always been interested in web and I have the necessary skills required for the role.I have a good understanding of HTML, CSS, JavaScript"
     },
-     {userid:16,
+    {
+      userid: 15,
       image: '/assets/images/arun 1.png',
-      name: 'Madhan',
-      place: 'chennai',
+      name: 'Abin',
+       people:" Intresting people, Idea people,Business people,Startup people, Sport people",
+      place: 'Gudalur',
+       contact:9789212608,
+       instaId:"madhan177",
+      facebookId:"maddymadhan",
+      linkedIn:" https://www.linkedin.com/in/madhan5944/",
+      description:"I have always been interested in web and I have the necessary skills required for the role.I have a good understanding of HTML, CSS, JavaScript"
     },
+    { userid:16,
+      image: '/assets/images/arun 2.png',
+      name: 'Siva',
+       people:" Intresting people, Idea people,Business people,Startup people, Sport people",
+      place: 'Thirunalveli',
+      contact:9789212608,
+      instaId:"madhan177",
+      facebookId:"maddymadhan",
+      linkedIn:" https://www.linkedin.com/in/madhan5944/",
+      description:"I have always been interested in web and I have the necessary skills required for the role.I have a good understanding of HTML, CSS, JavaScript"
+    },
+    
   ];
 
-currentuser ={userid:1};
+currentUser =this.users[1];
 
-    setTab(user) {
-        this.currentuser = user;
+    setUser(user) {
+        this.currentUser = user;
     }
 
     prev() {
-        if (this.currentuser !== this.users[0]) {
-            const curruser = this.currentuser;
+        if (this.currentUser !== this.users[0]) {
+            const currUser = this.currentUser;
             const i = this.users.findIndex(function (el) {
-                return el === curruser;
+                return el === currUser;
             });
-            this.currentuser = this.users[i - 1];
+            this.currentUser = this.users[i - 1];
+             
         }
-        console.log(this.currentuser)
+      console.log(this.currentUser)
     }
 
     next() {
-        if (this.currentuser !== this.users[this.users.length - 1]) {
-            const currTab = this.currentuser;
+        if (this.currentUser !== this.users[this.users.length - 1]) {
+            const currUser = this.currentUser;
             const i = this.users.findIndex(function (el) {
-                return el === currTab;
+                return el === currUser;
             });
-            this.currentuser = this.users[i + 1];
+            this.currentUser = this.users[i + 1];
+            
         }
+       console.log(this.currentUser)
     }
 //   next(user: any, userid: number) {  
 //     if (userid - 1 < 0) {  
