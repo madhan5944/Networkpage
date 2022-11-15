@@ -20,7 +20,7 @@ import { SignupPageComponent } from './signup-page/signup-page.component';
 import { ProfilepageComponent } from './profilepage/profilepage.component';
 import { HeaderComponent } from './header/header.component';
 import { PersonDetailsComponent } from './Adding people-information/person-details.component';
-import { PersondetailssViewComponent } from './people profile-Overview/persondetailss-view.component';
+import { PersondetailssViewComponent } from './display profile-page/persondetailss-view.component';
 import { ProfileDropdownComponent } from './profilelogout-dropdown/profile-dropdown.component';
 import { FormsModule } from '@angular/forms';
 import { NgMultiSelectDropDownModule } from 'ng-multiselect-dropdown';
