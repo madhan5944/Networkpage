@@ -105,7 +105,7 @@
                           border border-solid border-gray-300
                           rounded 
                           m-0focus:text-black focus:bg-white focus:border-blue-600 focus:outline-none
-                        " type="text" id="username" placeholder="Username" formControlName="usersname" />
+                        " type="text" id="username" placeholder="Username" formControlName="username" />
                 <small class="text-red-600 pt-1" *ngIf="vusername && vusername.invalid && vusername.touched">Username is
                     Required</small>
             </div>
@@ -131,7 +131,7 @@
                     letters, numbers & symbols</small>
             </div>
         </div>
-        <span routerLink="/profilepage" class="mt-[3vh] flex justify-center"><button
+        <span class="mt-[3vh] flex justify-center"><button
                 class="header bg-white hover:bg-gray-300 text-black font-semibold py-1 px-2 rounded-md border-2 border-black"
                 [disabled]="loginpage.invalid" id="submit">Submit</button></span>
 

@@ -2,14 +2,14 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { LoginpageComponent } from './loginpage/loginpage.component';
-import { WelcomeComponent }  from './welcome/welcome.component';
+import { WelcomeComponent }  from './Homepage/welcome.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
 import { ProfilepageComponent } from './profilepage/profilepage.component';
 import { HeaderComponent } from './header/header.component';
-import { PersonDetailsComponent } from './person-details/person-details.component';
-import { PersondetailssViewComponent} from './persondetailss-view/persondetailss-view.component';
-import { ProfileDropdownComponent } from './profile-dropdown/profile-dropdown.component';
-import { Chipsautocompleteexamplecomponent } from './chips-autocomplete-example/chips-autocomplete-example.component';
+import { PersonDetailsComponent } from './Adding people-information/person-details.component';
+import { PersondetailssViewComponent} from './people profile-Overview/persondetailss-view.component';
+import { ProfileDropdownComponent } from './profilelogout-dropdown/profile-dropdown.component';
+import { Chipsautocompleteexamplecomponent } from './multipletags/chips-autocomplete-example.component';
 
 
 

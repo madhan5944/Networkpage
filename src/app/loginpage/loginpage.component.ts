@@ -56,7 +56,7 @@ onSubmit(){
   //  this.loginform = JSON.parse(this.loginform)
   //  console.log(this.loginform.controls.usname.value)
 
-  if(this.signupdata.username == this.logindata.uersname && this.signupdata.password == this.logindata.password){
+  if(this.signupdata.username == this.logindata.username && this.signupdata.password == this.logindata.password){
     this.goToprofilepage();
   }
   else{
@@ -68,7 +68,7 @@ onSubmit(){
    // for forms validators
 
    get vusername(){
-return this.loginpage.get("uersname")
+return this.loginpage.get("username")
  }
   get vpassword(){
 return this.loginpage.get("password")

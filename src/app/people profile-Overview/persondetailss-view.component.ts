@@ -45,7 +45,7 @@ getid:any;
       userid: 1,
       image: "/assets/images/arun 1.png",
       name: 'Madhan',
-       people:" Intresting people, Idea people,Business people,Startup people, Sport people",
+       people: "Intresting people,Idea people,Business people,Startup people, Sport people",
       place: 'Chennai',
       contact:9789212608,
       instaId:"madhan177",
@@ -257,7 +257,7 @@ currentUser =this.users[1];
                 return el === currUser;
             });
             this.currentUser = this.users[i + 1];
-            
+             
         }
        console.log(this.currentUser)
     }
