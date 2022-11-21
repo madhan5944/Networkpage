@@ -18,7 +18,7 @@ export class Chipsautocompleteexamplecomponent {
   tagCtrl = new FormControl('');
   filteredtags: Observable<string[]>;
   tags: string[] = []; 
-  alltags: string[] = ['Business', 'Idea', 'Entertainment', 'Talented', 'Starup Plan'];
+  alltags: string[] = ['Business', 'Idea', 'Entertainment', 'Talented', 'StarupPlan'];
   // fruitInput:ElementRef<HTMLInputElement>;
 
   @ViewChild('tagInput') tagInput !: ElementRef<HTMLInputElement>;
