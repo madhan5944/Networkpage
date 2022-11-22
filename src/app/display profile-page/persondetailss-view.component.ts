@@ -10,7 +10,9 @@ type details = Array<{ id: number; name: string }>;
   styleUrls: ['./persondetailss-view.component.css'],
 })
 export class PersondetailssViewComponent implements OnInit {
-  constructor(private router: Router, private route: ActivatedRoute) {}
+  constructor(private router: Router, private route: ActivatedRoute) {
+  this.currentUser
+  }
   id: any;
   getid: any;
 
@@ -253,6 +255,8 @@ export class PersondetailssViewComponent implements OnInit {
     },
   ];
   currentIndex: any;
+  currentUser
+  
   @Input() receiver: any;
   ngOnInit(): void {
     this.route.paramMap.subscribe((params: ParamMap) => {
@@ -266,18 +270,19 @@ export class PersondetailssViewComponent implements OnInit {
           (users) => users.userid == this.id
         );
         console.log(this.currentIndex);
+        this.currentUser=this.users[this.currentIndex]
       }
+    
     });
 
     this.getid = this.users.find((user) => user.userid === +this.id);
+     
   }
 
- 
 
-  currentUser = this.users[0];
 
   prev() {
-    if (this.currentUser! == this.users[0]) {
+    if (this.currentUser=== this.getid) {
       const currUser = this.currentUser;
       const i = this.users.findIndex(function (el) {
         return el === currUser;
@@ -299,6 +304,7 @@ export class PersondetailssViewComponent implements OnInit {
     }
     console.log(this.currentUser);
   }
+
   //   next(user: any, userid: number) {
   //     if (userid - 1 < 0) {
   //         return;
