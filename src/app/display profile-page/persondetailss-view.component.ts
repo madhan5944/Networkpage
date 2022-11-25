@@ -11,7 +11,7 @@ type details = Array<{ id: number; name: string }>;
 })
 export class PersondetailssViewComponent implements OnInit {
   constructor(private router: Router, private route: ActivatedRoute) {
-  this.currentUser
+    this.currentUser;
   }
   id: any;
   getid: any;
@@ -255,68 +255,43 @@ export class PersondetailssViewComponent implements OnInit {
     },
   ];
   currentIndex: any;
-  currentUser
-  
+  currentUser;
+
   @Input() receiver: any;
   ngOnInit(): void {
     this.route.paramMap.subscribe((params: ParamMap) => {
       if (params.get('id') !== null) {
         this.id = params.get('id');
         console.log(typeof this.id, this.id);
-        
-        const check = (x) => x.userid ==this.id;
-        console.log(this.users.some(check));
+
         this.currentIndex = this.users.findIndex(
           (users) => users.userid == this.id
         );
         console.log(this.currentIndex);
-        this.currentUser=this.users[this.currentIndex]
+        this.currentUser = this.users[this.currentIndex];
       }
-    
     });
 
     this.getid = this.users.find((user) => user.userid === +this.id);
-     
   }
 
-
-
   prev() {
-    if (this.currentUser=== this.getid) {
-      const currUser = this.currentUser;
-      const i = this.users.findIndex(function (el) {
-        return el === currUser;
-      });
-      this.currentUser = this.users[i - 1];
-      this.getid = this.currentUser;
-    }
+    if (this.currentUser !== this.users[0])
+      this.currentUser = this.users[this.currentIndex - 1];
+    this.getid = this.currentUser;
     console.log(this.currentUser);
+    this.router.navigateByUrl(
+      `/persondetailss-view/${this.currentUser.userid}`
+    );
   }
 
   next() {
-    if (this.currentUser !== this.users[this.users.length - 1]) {
-      const currUser = this.currentUser;
-      const i = this.users.findIndex(function (el) {
-        return el === currUser;
-      });
-      this.currentUser = this.users[i + 1];
-      this.getid = this.currentUser;
-    }
+    if (this.currentUser !== this.users[this.users.length - 1])
+      this.currentUser = this.users[this.currentIndex + 1];
+    this.getid = this.currentUser;
     console.log(this.currentUser);
+    this.router.navigateByUrl(
+      `/persondetailss-view/${this.currentUser.userid}`
+    );
   }
-
-  //   next(user: any, userid: number) {
-  //     if (userid - 1 < 0) {
-  //         return;
-  //     }
-  //     this.users[userid] = this.users[userid - 1];
-  //     this.users[userid - 1] = user;
-  // }
-  // previous(user: any, userid: number) {
-  //     if (userid + 1 >= this.users.length) {
-  //         return;
-  //     }
-  //     this.users[userid] = this.users[userid + 1];
-  //     this.users[userid + 1] = user;
-  // }
 }
