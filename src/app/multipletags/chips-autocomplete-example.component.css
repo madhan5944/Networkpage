@@ -13,3 +13,12 @@ resize: both;
 .header{
    font-family: dosis; 
 }
+.scrollbox{
+    overflow: hidden;
+                overflow-y: auto;
+                
+}
+.scrollbox::-webkit-scrollbar {
+    display: none;
+    scroll-behavior: smooth;
+}

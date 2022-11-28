@@ -21,7 +21,7 @@ export class SignupPageComponent implements OnInit {
 
 constructor(private router: Router) {}
   goToprofile() {
-    this.router.navigate(['./profilepage']);
+    this.router.navigate(['./loginpage']);
   }
  onSubmit(){
  localStorage.setItem('User', JSON.stringify(this.signuppage.value));

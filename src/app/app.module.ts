@@ -36,6 +36,7 @@ import { NgxPaginationModule } from 'ngx-pagination';
 
 
 
+
 @NgModule({
 
   declarations: [
@@ -49,7 +50,8 @@ import { NgxPaginationModule } from 'ngx-pagination';
     PersonDetailsComponent,
     PersondetailssViewComponent,
     ProfileDropdownComponent,
-    Chipsautocompleteexamplecomponent
+    Chipsautocompleteexamplecomponent,
+   
   ],
   imports: [
     BrowserModule,

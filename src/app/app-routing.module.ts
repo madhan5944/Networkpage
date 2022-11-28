@@ -10,6 +10,7 @@ import { PersonDetailsComponent } from './Adding people-information/person-detai
 import { PersondetailssViewComponent} from './display profile-page/persondetailss-view.component';
 import { ProfileDropdownComponent } from './profilelogout-dropdown/profile-dropdown.component';
 import { Chipsautocompleteexamplecomponent } from './multipletags/chips-autocomplete-example.component';
+import { AuthGuard } from './Authguard/auth.guard';
 
 
 
@@ -20,10 +21,10 @@ const routes: Routes = [
   {path:'welcome',component:WelcomeComponent},
   {path: '',   redirectTo: '/welcome', pathMatch: 'full'},
   {path:'signuppage',component:SignupPageComponent},
-  {path:'profilepage',component:ProfilepageComponent},
+  {path:'profilepage',component:ProfilepageComponent,canActivate:[AuthGuard]},
   {path:'header',component:HeaderComponent},
-  {path:'person-details',component: PersonDetailsComponent},
-  {path:'persondetailss-view/:id',component: PersondetailssViewComponent},
+  {path:'person-details',component: PersonDetailsComponent,canActivate:[AuthGuard]},
+  {path:'persondetailss-view/:id',component: PersondetailssViewComponent,canActivate:[AuthGuard]},
   {path:'profile-dropdown',component:ProfileDropdownComponent},
   {path:'chips-autocomplete',component:Chipsautocompleteexamplecomponent},
 
